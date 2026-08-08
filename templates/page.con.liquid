@@ -1,0 +1,459 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body { font-family: 'Poppins', sans-serif; background: #f5f3ff; overflow-x: hidden; }
+
+  /* ═══ HERO BANNER ═══ */
+  .ct-hero {
+    background: linear-gradient(135deg, #1a0533 0%, #2d0a6e 40%, #3b0f8c 100%);
+    padding: 60px 24px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .ct-hero::before {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(195,240,74,0.1) 0%, transparent 60%);
+  }
+  .ct-hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(195,240,74,0.12); border: 1px solid rgba(195,240,74,0.3);
+    color: #c3f04a; font-size: 0.85rem; font-weight: 700; padding: 6px 18px;
+    border-radius: 100px; margin-bottom: 20px; position: relative; z-index: 1;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ct-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 900; color: #fff;
+    line-height: 1.1; margin-bottom: 16px; position: relative; z-index: 1;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ct-hero h1 span { color: #c3f04a; }
+  .ct-hero p {
+    font-size: 1.1rem; color: rgba(255,255,255,0.7); max-width: 520px;
+    margin: 0 auto; position: relative; z-index: 1; font-family: 'Poppins', sans-serif;
+  }
+
+  /* ═══ INFO CARDS ROW ═══ */
+  .ct-info-row {
+    display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;
+    max-width: 900px; margin: -40px auto 0; padding: 0 24px;
+    position: relative; z-index: 2;
+  }
+  .ct-info-card {
+    background: #fff; border-radius: 20px; padding: 24px 28px;
+    display: flex; align-items: center; gap: 16px; flex: 1; min-width: 220px; max-width: 270px;
+    box-shadow: 0 8px 32px rgba(117,73,206,0.12); border: 1px solid rgba(117,73,206,0.1);
+    transition: all .25s;
+  }
+  .ct-info-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(117,73,206,0.18); }
+  .ct-info-icon {
+    width: 48px; height: 48px; border-radius: 14px; background: linear-gradient(135deg, #7549ce, #9b6ee8);
+    display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;
+  }
+  .ct-info-label { font-size: 0.78rem; font-weight: 600; color: #9ca3af; text-transform: uppercase; letter-spacing: 0.5px; font-family: 'Poppins', sans-serif; }
+  .ct-info-val { font-size: 0.95rem; font-weight: 700; color: #1f2937; margin-top: 3px; font-family: 'Poppins', sans-serif; }
+
+  /* ═══ MAIN LAYOUT ═══ */
+  .ct-main {
+    max-width: 1100px; margin: 48px auto 0; padding: 0 24px 80px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+  }
+  @media (max-width: 900px) { .ct-main { grid-template-columns: 1fr; } }
+
+  /* ═══ CONTACT FORM ═══ */
+  .ct-form-wrap {
+    background: #fff; border-radius: 24px; padding: 36px;
+    box-shadow: 0 8px 32px rgba(117,73,206,0.1); border: 1px solid rgba(117,73,206,0.08);
+  }
+  .ct-form-title { font-size: 1.5rem; font-weight: 800; color: #1f2937; margin-bottom: 6px; font-family: 'Poppins', sans-serif; }
+  .ct-form-sub { font-size: 0.9rem; color: #6b7280; margin-bottom: 28px; font-family: 'Poppins', sans-serif; }
+
+  .ct-field { margin-bottom: 18px; }
+  .ct-field label {
+    display: block; font-size: 0.85rem; font-weight: 600; color: #374151;
+    margin-bottom: 7px; font-family: 'Poppins', sans-serif;
+  }
+  .ct-field label span { color: #ef4444; }
+  .ct-field input, .ct-field select, .ct-field textarea {
+    width: 100%; padding: 13px 16px; border: 1.5px solid #e5e7eb; border-radius: 12px;
+    font-size: 0.95rem; font-family: 'Poppins', sans-serif; color: #1f2937;
+    background: #fafafa; transition: all .2s; outline: none;
+  }
+  .ct-field input:focus, .ct-field select:focus, .ct-field textarea:focus {
+    border-color: #7549ce; background: #fff; box-shadow: 0 0 0 3px rgba(117,73,206,0.1);
+  }
+  .ct-field textarea { resize: vertical; min-height: 120px; }
+  .ct-field select { cursor: pointer; }
+
+  .ct-field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 500px) { .ct-field-row { grid-template-columns: 1fr; } }
+
+  .ct-submit-btn {
+    width: 100%; background: linear-gradient(135deg, #7549ce, #9b6ee8);
+    color: #fff; border: none; padding: 15px 28px; border-radius: 100px;
+    font-size: 1rem; font-weight: 800; cursor: pointer; transition: all .25s;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    box-shadow: 0 4px 20px rgba(117,73,206,0.35); font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+  }
+  .ct-submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(117,73,206,0.45); }
+  .ct-submit-btn:active { transform: translateY(0); }
+  .ct-submit-btn.sent { background: linear-gradient(135deg, #16a34a, #22c55e); }
+
+  .ct-success-msg {
+    display: none; background: #f0fdf4; border: 1.5px solid #86efac;
+    border-radius: 12px; padding: 16px 20px; margin-top: 16px;
+    color: #16a34a; font-size: 0.9rem; font-weight: 600;
+    align-items: center; gap: 10px; font-family: 'Poppins', sans-serif;
+  }
+  .ct-success-msg.show { display: flex; }
+
+  /* ═══ RIGHT COLUMN ═══ */
+  .ct-right { display: flex; flex-direction: column; gap: 24px; }
+
+  /* ═══ FAQ ═══ */
+  .ct-faq-wrap {
+    background: #fff; border-radius: 24px; padding: 32px 36px;
+    box-shadow: 0 8px 32px rgba(117,73,206,0.1); border: 1px solid rgba(117,73,206,0.08);
+  }
+  .ct-faq-title { font-size: 1.3rem; font-weight: 800; color: #1f2937; margin-bottom: 20px; font-family: 'Poppins', sans-serif; }
+
+  .ct-faq-item { border-bottom: 1px solid #f3f4f6; }
+  .ct-faq-item:last-child { border-bottom: none; }
+  .ct-faq-q {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 0; cursor: pointer; gap: 12px;
+  }
+  .ct-faq-q span {
+    font-size: 0.95rem; font-weight: 600; color: #1f2937;
+    font-family: 'Poppins', sans-serif; flex: 1;
+  }
+  .ct-faq-icon {
+    width: 28px; height: 28px; border-radius: 50%; background: #f5f3ff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; color: #7549ce; flex-shrink: 0; transition: all .2s;
+    font-weight: 700;
+  }
+  .ct-faq-item.open .ct-faq-icon { background: #7549ce; color: #fff; transform: rotate(45deg); }
+  .ct-faq-a {
+    font-size: 0.88rem; color: #6b7280; line-height: 1.7;
+    max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s;
+    font-family: 'Poppins', sans-serif;
+  }
+  .ct-faq-item.open .ct-faq-a { max-height: 200px; padding-bottom: 16px; }
+
+  /* ═══ SOCIAL LINKS ═══ */
+  .ct-social-wrap {
+    background: linear-gradient(135deg, #1a0533, #2d0a6e);
+    border-radius: 24px; padding: 28px 32px;
+    box-shadow: 0 8px 32px rgba(117,73,206,0.2);
+  }
+  .ct-social-title { font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 6px; font-family: 'Poppins', sans-serif; }
+  .ct-social-sub { font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 20px; font-family: 'Poppins', sans-serif; }
+
+  .ct-social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .ct-social-btn {
+    display: flex; align-items: center; gap: 10px; padding: 12px 16px;
+    border-radius: 12px; text-decoration: none; transition: all .2s;
+    border: 1px solid rgba(255,255,255,0.1); background: rgba(255,255,255,0.06);
+  }
+  .ct-social-btn:hover { background: rgba(255,255,255,0.14); transform: translateY(-2px); border-color: rgba(195,240,74,0.3); }
+  .ct-social-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+  .ct-social-name { font-size: 0.88rem; font-weight: 700; color: #fff; font-family: 'Poppins', sans-serif; }
+  .ct-social-handle { font-size: 0.75rem; color: rgba(255,255,255,0.5); font-family: 'Poppins', sans-serif; }
+
+  .si-instagram { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366); }
+  .si-twitter   { background: #000; }
+  .si-facebook  { background: #1877f2; }
+  .si-whatsapp  { background: #25d366; }
+  .si-youtube   { background: #ff0000; }
+  .si-linkedin  { background: #0077b5; }
+
+  /* ═══ RESPONSE TIME BADGE ═══ */
+  .ct-response-badge {
+    display: flex; align-items: center; gap: 10px; margin-top: 16px;
+    background: rgba(195,240,74,0.1); border: 1px solid rgba(195,240,74,0.25);
+    border-radius: 12px; padding: 12px 16px;
+  }
+  .ct-response-dot { width: 10px; height: 10px; border-radius: 50%; background: #c3f04a; animation: pulse 1.5s infinite; flex-shrink: 0; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.2)} }
+  .ct-response-text { font-size: 0.82rem; font-weight: 600; color: #c3f04a; font-family: 'Poppins', sans-serif; }
+
+  /* ═══ DARK MODE ═══ */
+  [data-scheme="dark"] body { background: #0f111a; }
+  [data-scheme="dark"] .ct-form-wrap,
+  [data-scheme="dark"] .ct-faq-wrap { background: #161625; border-color: rgba(255,255,255,0.06); }
+  [data-scheme="dark"] .ct-form-title,
+  [data-scheme="dark"] .ct-faq-title,
+  [data-scheme="dark"] .ct-faq-q span { color: #ffffff; }
+  [data-scheme="dark"] .ct-form-sub,
+  [data-scheme="dark"] .ct-faq-a { color: #9ca3af; }
+  [data-scheme="dark"] .ct-field label { color: #d1d5db; }
+  [data-scheme="dark"] .ct-field input,
+  [data-scheme="dark"] .ct-field select,
+  [data-scheme="dark"] .ct-field textarea { background: #1f2937; border-color: rgba(255,255,255,0.1); color: #fff; }
+  [data-scheme="dark"] .ct-field input:focus,
+  [data-scheme="dark"] .ct-field select:focus,
+  [data-scheme="dark"] .ct-field textarea:focus { border-color: #7549ce; background: #1f2937; }
+  [data-scheme="dark"] .ct-info-card { background: #161625; border-color: rgba(255,255,255,0.06); }
+  [data-scheme="dark"] .ct-info-val { color: #ffffff; }
+  [data-scheme="dark"] .ct-faq-item { border-bottom-color: rgba(255,255,255,0.06); }
+</style>
+
+<!-- ═══════ HERO ═══════ -->
+<section class="ct-hero">
+  <div class="ct-hero-badge">✉️ We're here to help</div>
+  <h1>Get in Touch<br>with <span>ZetSIM</span></h1>
+  <p>Have a question about your eSIM plan? Our support team typically replies within 2 hours.</p>
+</section>
+
+<!-- ═══════ INFO CARDS ═══════ -->
+<div class="ct-info-row">
+  <div class="ct-info-card">
+    <div class="ct-info-icon">📧</div>
+    <div>
+      <div class="ct-info-label">Email Us</div>
+      <div class="ct-info-val">support@zetsim.com</div>
+    </div>
+  </div>
+  <div class="ct-info-card">
+    <div class="ct-info-icon">💬</div>
+    <div>
+      <div class="ct-info-label">Live Chat</div>
+      <div class="ct-info-val">Available 24/7</div>
+    </div>
+  </div>
+  <div class="ct-info-card">
+    <div class="ct-info-icon">⚡</div>
+    <div>
+      <div class="ct-info-label">Response Time</div>
+      <div class="ct-info-val">Under 2 Hours</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ MAIN CONTENT ═══════ -->
+<div class="ct-main">
+
+  <!-- ══ CONTACT FORM ══ -->
+  <div class="ct-form-wrap">
+    <div class="ct-form-title">Send us a Message</div>
+    <div class="ct-form-sub">Fill in the form below and we'll get back to you shortly.</div>
+
+    <div class="ct-field-row">
+      <div class="ct-field">
+        <label>First Name <span>*</span></label>
+        <input type="text" id="ct-fname" placeholder="John">
+      </div>
+      <div class="ct-field">
+        <label>Last Name <span>*</span></label>
+        <input type="text" id="ct-lname" placeholder="Doe">
+      </div>
+    </div>
+
+    <div class="ct-field">
+      <label>Email Address <span>*</span></label>
+      <input type="email" id="ct-email" placeholder="john@example.com">
+    </div>
+
+    <div class="ct-field">
+      <label>Phone Number</label>
+      <input type="tel" id="ct-phone" placeholder="+1 (555) 000-0000">
+    </div>
+
+    <div class="ct-field">
+      <label>Topic <span>*</span></label>
+      <select id="ct-topic">
+        <option value="" disabled selected>Select a topic...</option>
+        <option>eSIM Activation Help</option>
+        <option>Plan Selection / Upgrade</option>
+        <option>Billing & Payments</option>
+        <option>Technical Support</option>
+        <option>Roaming & Coverage</option>
+        <option>Order Status</option>
+        <option>Partnership / B2B</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="ct-field">
+      <label>Order ID <span style="color:#9ca3af;font-weight:400">(optional)</span></label>
+      <input type="text" id="ct-order" placeholder="e.g. #ZET-12345">
+    </div>
+
+    <div class="ct-field">
+      <label>Message <span>*</span></label>
+      <textarea id="ct-message" placeholder="Describe your issue or question in detail..."></textarea>
+    </div>
+
+    <button class="ct-submit-btn" id="ct-submit-btn" onclick="submitContact()">
+      <span id="ct-btn-text">Send Message 🚀</span>
+    </button>
+
+    <div class="ct-success-msg" id="ct-success">
+      ✅ Message sent! We'll reply to your email within 2 hours.
+    </div>
+  </div>
+
+  <!-- ══ RIGHT COLUMN ══ -->
+  <div class="ct-right">
+
+    <!-- FAQ -->
+    <div class="ct-faq-wrap">
+      <div class="ct-faq-title">💡 Frequently Asked Questions</div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>How do I activate my ZetSIM eSIM?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">After purchase, you'll receive a QR code via email. Go to your phone Settings → Mobile Data → Add eSIM → Scan QR Code. Activation takes under 2 minutes.</div>
+      </div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>Which devices are compatible with ZetSIM?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">ZetSIM works with all eSIM-compatible devices including iPhone XS and newer, Google Pixel 3+, Samsung Galaxy S20+, and most modern Android flagships. Check our compatibility page for the full list.</div>
+      </div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>Can I use ZetSIM in multiple countries?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">Yes! ZetSIM covers 200+ countries. Our regional plans like the North America FIFA bundle cover USA, Canada, and Mexico with one eSIM — no switching required.</div>
+      </div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>What happens when my data runs out?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">You can top up your plan directly from your ZetSIM account dashboard. Data top-ups are instant and activate within seconds of purchase.</div>
+      </div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>Do you offer refunds?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">Unused eSIM plans are eligible for a full refund within 14 days. Once activated, plans are non-refundable. Contact our support team and we'll resolve any issues quickly.</div>
+      </div>
+
+      <div class="ct-faq-item">
+        <div class="ct-faq-q" onclick="toggleFaq(this)">
+          <span>How long does it take to receive the eSIM?</span>
+          <div class="ct-faq-icon">+</div>
+        </div>
+        <div class="ct-faq-a">Your eSIM QR code is delivered instantly to your email after purchase. No waiting, no shipping — just scan and connect from anywhere in the world.</div>
+      </div>
+    </div>
+
+    <!-- SOCIAL LINKS -->
+    <div class="ct-social-wrap">
+      <div class="ct-social-title">📲 Connect With Us</div>
+      <div class="ct-social-sub">Follow ZetSIM for travel tips, deals & updates</div>
+
+      <div class="ct-social-grid">
+        <a href="https://instagram.com/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-instagram">📷</div>
+          <div>
+            <div class="ct-social-name">Instagram</div>
+            <div class="ct-social-handle">@zetsim</div>
+          </div>
+        </a>
+        <a href="https://twitter.com/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-twitter">𝕏</div>
+          <div>
+            <div class="ct-social-name">Twitter / X</div>
+            <div class="ct-social-handle">@zetsim</div>
+          </div>
+        </a>
+        <a href="https://facebook.com/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-facebook">f</div>
+          <div>
+            <div class="ct-social-name">Facebook</div>
+            <div class="ct-social-handle">ZetSIM Official</div>
+          </div>
+        </a>
+        <a href="https://wa.me/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-whatsapp">💬</div>
+          <div>
+            <div class="ct-social-name">WhatsApp</div>
+            <div class="ct-social-handle">Chat with us</div>
+          </div>
+        </a>
+        <a href="https://youtube.com/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-youtube">▶️</div>
+          <div>
+            <div class="ct-social-name">YouTube</div>
+            <div class="ct-social-handle">ZetSIM Channel</div>
+          </div>
+        </a>
+        <a href="https://linkedin.com/company/zetsim" target="_blank" class="ct-social-btn">
+          <div class="ct-social-icon si-linkedin">in</div>
+          <div>
+            <div class="ct-social-name">LinkedIn</div>
+            <div class="ct-social-handle">ZetSIM</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="ct-response-badge">
+        <div class="ct-response-dot"></div>
+        <div class="ct-response-text">Our team is online now · Average reply time: &lt;2 hours</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.ct-faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+function submitContact() {
+  const fname  = document.getElementById('ct-fname').value.trim();
+  const email  = document.getElementById('ct-email').value.trim();
+  const topic  = document.getElementById('ct-topic').value;
+  const message = document.getElementById('ct-message').value.trim();
+
+  if (!fname || !email || !topic || !message) {
+    alert('Please fill in all required fields.');
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+
+  const btn = document.getElementById('ct-submit-btn');
+  const btnText = document.getElementById('ct-btn-text');
+  btnText.textContent = 'Sending...';
+  btn.style.opacity = '0.8';
+  btn.style.pointerEvents = 'none';
+
+  setTimeout(() => {
+    btn.classList.add('sent');
+    btnText.textContent = '✓ Message Sent!';
+    document.getElementById('ct-success').classList.add('show');
+    document.getElementById('ct-fname').value = '';
+    document.getElementById('ct-lname').value = '';
+    document.getElementById('ct-email').value = '';
+    document.getElementById('ct-phone').value = '';
+    document.getElementById('ct-topic').value = '';
+    document.getElementById('ct-order').value = '';
+    document.getElementById('ct-message').value = '';
+  }, 1200);
+}
+</script>

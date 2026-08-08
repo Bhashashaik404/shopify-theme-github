@@ -1,0 +1,229 @@
+<section class="fitness-category">
+  <div class="container">
+
+    <div class="section-heading">
+      <h2>Fitness & Gym Equipment</h2>
+      <p>Premium gym equipment designed for home and commercial fitness.</p>
+    </div>
+
+    <div class="category-grid">
+
+      <a href="#" class="category-item">
+        <div class="image-box">
+          <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/treadmill-5-0hp-a-c-motorized-auto-incline-with-mp3-semi-comm--500x500.webp?v=1779978533" alt="Treadmills">
+        </div>
+        <h3>Treadmills</h3>
+      </a>
+
+      <a href="https://bhasha-eugnfs0i.myshopify.com/products/chest-bench" class="category-item">
+        <div class="image-box">
+          <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/Competitive-Price-Hot-Sale-Gym-Bench-Weight-Lifting-Gym-Equipment-Adjustable-Bench.avif?v=1779773186" alt="Workout Bench">
+        </div>
+        <h3>Workout Bench</h3>
+        
+      </a>
+
+      <a href="#" class="category-item">
+        <div class="image-box">
+          <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/LLHRD05_11000x1000_1057b718-f953-4723-9d34-14091a3eff34.webp?v=1780392309" alt="Gym Weights">
+        </div>
+        <h3>Gym Weights</h3>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.fitness-category{
+    padding:80px 0;
+    background:#f8f8f8;
+}
+
+.container{
+    width:92%;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* Heading */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.section-heading h2{
+    font-size:44px;
+    font-weight:700;
+    color:#111;
+    margin-bottom:12px;
+}
+
+.section-heading p{
+    font-size:18px;
+    color:#777;
+}
+
+/* Grid */
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+/* Card */
+
+.category-item{
+    text-decoration:none;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s ease;
+}
+
+.image-box{
+    overflow:hidden;
+}
+
+.category-item img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+    display:block;
+    transition:.5s;
+}
+
+.category-item h3{
+    padding:22px;
+    text-align:center;
+    color:#222;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* Hover */
+
+.category-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.category-item:hover img{
+    transform:scale(1.08);
+}
+
+.category-item:hover h3{
+    color:#ff9800;
+}
+
+/* Laptop */
+
+@media (max-width:1200px){
+
+.category-grid{
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+}
+
+.category-item img{
+    height:300px;
+}
+
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+.section-heading h2{
+    font-size:36px;
+}
+
+.section-heading p{
+    font-size:16px;
+}
+
+.category-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.category-item img{
+    height:280px;
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.fitness-category{
+    padding:60px 0;
+}
+
+.section-heading{
+    margin-bottom:35px;
+}
+
+.section-heading h2{
+    font-size:30px;
+}
+
+.section-heading p{
+    font-size:15px;
+}
+
+.category-grid{
+    grid-template-columns:1fr;
+    gap:20px;
+}
+
+.category-item img{
+    height:260px;
+}
+
+.category-item h3{
+    font-size:20px;
+    padding:18px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+.container{
+    width:94%;
+}
+
+.section-heading h2{
+    font-size:26px;
+}
+
+.section-heading p{
+    font-size:14px;
+}
+
+.category-item img{
+    height:230px;
+}
+
+.category-item h3{
+    font-size:18px;
+}
+
+}
+
+</style>

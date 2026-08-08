@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Date Picker</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="booking-wrapper">
+
+    <div class="date-picker">
+        <input
+            type="date"
+            id="bookingDate"
+            min=""
+            required
+        >
+    </div>
+
+    <button class="checkout-btn">
+        Checkout
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.booking-wrapper{
+    width:420px;
+}
+
+.date-picker{
+    width:100%;
+}
+
+.date-picker input[type="date"]{
+
+    width:100%;
+    height:50px;
+    padding:0 15px;
+    font-size:16px;
+
+    border:1px solid #d9d9d9;
+    border-radius:8px;
+
+    outline:none;
+    cursor:pointer;
+    background:#fff;
+    color:#555;
+}
+
+.date-picker input[type="date"]:focus{
+    border-color:#6d911d;
+    box-shadow:0 0 5px rgba(109,145,29,.3);
+}
+
+.checkout-btn{
+
+    width:120px;
+    height:40px;
+
+    margin-top:15px;
+    float:right;
+
+    border:none;
+    border-radius:3px;
+
+    background:#6d911d;
+    color:#fff;
+
+    font-size:20px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-btn:hover{
+    background:#55730d;
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+.booking-wrapper{
+    width:95%;
+}
+
+.checkout-btn{
+    width:100%;
+    float:none;
+}
+
+}
+</style>
+<script>
+    // Prevent selecting previous dates
+
+const today = new Date().toISOString().split("T")[0];
+
+document.getElementById("bookingDate").setAttribute("min", today);
+
+
+// Checkout button
+
+document.querySelector(".checkout-btn").addEventListener("click", function(){
+
+    const date = document.getElementById("bookingDate").value;
+
+    if(date==""){
+        alert("Please select a date.");
+        return;
+    }
+
+    alert("Selected Date: " + date);
+
+});
+</script>

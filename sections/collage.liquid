@@ -1,0 +1,213 @@
+<section class="promo-grid-section">
+  <div class="promo-grid">
+
+    <!-- Card 1 -->
+    <a href="#" class="promo-card">
+      <div class="promo-content">
+        <span>CURATED SELECTION FOR YOU</span>
+        <div class="line"></div>
+        <h3>FITNESS DAYS</h3>
+      </div>
+
+      <div class="promo-image">
+        <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/mxw_1024_f_auto.avif?v=1780593171" alt="Fitness Days">
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+    <a href="#" class="promo-card">
+      <div class="promo-content">
+        <span>CURATED SELECTION FOR YOU</span>
+        <div class="line"></div>
+        <h3>HOME GYM STORE</h3>
+      </div>
+
+      <div class="promo-image">
+        <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/Adjustable-Weight-Bench-for-Home-Gym-Full-Body-Strength-Training-Foldable-Incline_24f5d8fa-7e49-4264-9731-d9ee036d58bd.jpg?v=1779725611" alt="Home Gym">
+      </div>
+    </a>
+
+    <!-- Card 3 -->
+    <a href="#" class="promo-card">
+      <div class="promo-content">
+        <span>CURATED SELECTION FOR YOU</span>
+        <div class="line"></div>
+        <h3>YOGA STORE</h3>
+      </div>
+
+      <div class="promo-image">
+        <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/images_1.jpg?v=1784270142" alt="Yoga">
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="#" class="promo-card">
+      <div class="promo-content">
+        <span>CURATED SELECTION FOR YOU</span>
+        <div class="line"></div>
+        <h3>CYCLING STORE</h3>
+      </div>
+
+      <div class="promo-image">
+        <img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/images_2.jpg?v=1784270225" alt="Cycling">
+      </div>
+    </a>
+
+  </div>
+</section>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+.promo-grid-section{
+    padding:60px 20px;
+    background:#f6f6f6;
+}
+
+.promo-grid{
+    max-width:1500px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.promo-card{
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    min-height:360px;
+    padding:40px;
+    overflow:hidden;
+    text-decoration:none;
+    color:#111;
+    border-radius:12px;
+    transition:.35s;
+}
+
+.promo-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* Teal corner shapes */
+
+.promo-card::before{
+    content:"";
+    position:absolute;
+    left:-60px;
+    top:-40px;
+    width:180px;
+    height:70px;
+    background:#36d7d1;
+    transform:rotate(-60deg);
+}
+
+.promo-card::after{
+    content:"";
+    position:absolute;
+    left:-40px;
+    top:110px;
+    width:120px;
+    height:45px;
+    background:#36d7d1;
+    transform:rotate(-60deg);
+}
+
+.promo-content{
+    width:42%;
+    z-index:2;
+}
+
+.promo-content span{
+    font-size:22px;
+    font-weight:300;
+    line-height:1.2;
+    display:block;
+}
+
+.line{
+    width:180px;
+    border-bottom:3px dotted #444;
+    margin:18px 0;
+}
+
+.promo-content h3{
+    font-size:42px;
+    font-weight:800;
+    line-height:1.05;
+}
+
+.promo-image{
+    width:50%;
+    text-align:right;
+}
+
+.promo-image img{
+    width:100%;
+    max-width:360px;
+    transition:.35s;
+}
+
+.promo-card:hover img{
+    transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.promo-grid{
+    grid-template-columns:1fr;
+}
+
+.promo-card{
+    flex-direction:column;
+    text-align:center;
+    min-height:auto;
+}
+
+.promo-content,
+.promo-image{
+    width:100%;
+}
+
+.line{
+    margin:20px auto;
+}
+
+.promo-image{
+    margin-top:30px;
+}
+
+.promo-content h3{
+    font-size:34px;
+}
+
+}
+
+@media(max-width:576px){
+
+.promo-content span{
+    font-size:18px;
+}
+
+.promo-content h3{
+    font-size:28px;
+}
+
+.promo-card{
+    padding:25px;
+}
+
+}
+</style>

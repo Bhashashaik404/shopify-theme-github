@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BHASHA FITNESS</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
+    background:#fff;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+        HEADER
+========================= */
+
+.coffee-header{
+
+    width:100%;
+    background:#d8b07a;
+
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+
+}
+
+.header-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    gap:25px;
+
+    padding:18px 25px;
+
+}
+
+.logo img{
+
+    height:58px;
+
+}
+
+.nav-menu{
+
+    flex:1;
+
+}
+
+.nav-menu ul{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+.nav-menu a{
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#5b3817;
+
+}
+
+.header-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.search-box{
+
+    width:320px;
+
+    height:45px;
+
+    display:flex;
+
+    background:#fff;
+
+    border-radius:8px;
+
+    overflow:hidden;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    padding:0 15px;
+
+}
+
+.search-box button{
+
+    width:50px;
+
+    border:none;
+
+    background:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.icon{
+
+    font-size:24px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    position:relative;
+
+}
+
+.cart-count{
+
+    position:absolute;
+
+    top:-7px;
+
+    right:-9px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
+
+}
+
+/* =========================
+      HERO SECTION
+========================= */
+
+.hero-banner{
+
+    width:100%;
+
+    background:#f6f7fb;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-140px;
+
+    width:450px;
+
+    height:100%;
+
+    background:rgba(255,255,255,.75);
+
+    transform:skew(-18deg);
+
+}
+
+.hero-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-170px;
+
+    width:500px;
+
+    height:100%;
+
+    background:#fff;
+
+    transform:skew(-18deg);
+
+}
+
+.hero-container{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:700px;
+
+    padding:50px 30px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-content{
+
+    width:50%;
+
+}
+
+.hero-content h1{
+
+    font-size:78px;
+
+    color:#22366d;
+
+    font-weight:800;
+
+    line-height:1.05;
+
+    text-transform:uppercase;
+
+}
+
+.hero-content span{
+
+    color:#22366d;
+
+}
+
+.hero-content p{
+
+    font-size:30px;
+
+    margin:30px 0 40px;
+
+    color:#444;
+
+}
+
+.hero-btn{
+
+    display:inline-block;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    background:#22366d;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.hero-btn:hover{
+
+    background:#ffb400;
+
+}
+
+.hero-image{
+
+    width:48%;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:650px;
+
+}
+
+/* =========================
+      TABLET
+========================= */
+
+@media(max-width:1024px){
+
+.header-container{
+
+    flex-wrap:wrap;
+
+}
+
+.nav-menu{
+
+    width:100%;
+
+    order:3;
+
+}
+
+.nav-menu ul{
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+.search-box{
+
+    width:250px;
+
+}
+
+.hero-container{
+
+    padding:50px 25px;
+
+}
+
+.hero-content h1{
+
+    font-size:58px;
+
+}
+
+.hero-content p{
+
+    font-size:24px;
+
+}
+
+}
+
+/* =========================
+        MOBILE
+========================= */
+
+@media(max-width:768px){
+
+.header-container{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.logo img{
+
+    height:50px;
+
+}
+
+.nav-menu{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+.nav-menu ul{
+
+    width:max-content;
+
+    gap:20px;
+
+    padding:10px 0;
+
+}
+
+.header-icons{
+
+    width:100%;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+.search-box{
+
+    width:100%;
+
+}
+
+.hero-banner::before,
+
+.hero-banner::after{
+
+    display:none;
+
+}
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    min-height:auto;
+
+    padding:50px 20px;
+
+}
+
+.hero-content,
+
+.hero-image{
+
+    width:100%;
+
+}
+
+.hero-image{
+
+    justify-content:center;
+
+    margin-bottom:30px;
+
+}
+
+.hero-image img{
+
+    max-width:400px;
+
+}
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+.hero-content p{
+
+    font-size:20px;
+
+}
+
+}
+
+/* =========================
+      SMALL MOBILE
+========================= */
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+    font-size:34px;
+
+}
+
+.hero-content p{
+
+    font-size:17px;
+
+}
+
+.hero-image img{
+
+    max-width:300px;
+
+}
+
+.hero-btn{
+
+    padding:15px 32px;
+
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="coffee-header">
+
+<div class="header-container">
+
+<div class="logo">
+
+<a href="#">
+
+<img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/medium-gym-framed-poster-gym-posters-with-frame-framed-gym-original-imafsyf4sdwyedcy.webp?v=1780390689">
+
+</a>
+
+</div>
+
+<nav class="nav-menu">
+
+<ul>
+
+<li><a href="https://bhasha-eugnfs0i.myshopify.com/products/rubber-dumbles">ORDER DUMBLES</a></li>
+<l2><a href="https://bhasha-eugnfs0i.myshopify.com/products/dumble-set-of-5-kgs"></a></l2>
+
+<li><a href="https://bhasha-eugnfs0i.myshopify.com/products/chest-bench">GYM MACHINES</a></li>
+
+<li><a href="#">OUR STORY</a></li>
+
+<li><a href="#">GIFTS & COMBOS</a></li>
+
+</ul>
+
+</nav>
+
+<div class="header-icons">
+
+<div class="search-box">
+
+<input type="text" placeholder="Search Products">
+
+<button>🔍</button>
+
+</div>
+
+<a href="#" class="icon">👤</a>
+
+<a href="#" class="icon">
+
+🛒
+
+<span class="cart-count">0</span>
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero-banner">
+
+<div class="hero-container">
+
+<div class="hero-content">
+
+<h1>
+
+YOUR <span>FITNESS</span><br>
+
+IS YOUR <span>HEALTH</span>
+
+</h1>
+
+<p>
+
+and your determination is your equipment
+
+</p>
+
+<a href="#" class="hero-btn">
+
+SHOP NOW
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://cdn.shopify.com/s/files/1/0986/7893/1776/files/CHG-200CHomeGym_1_58ba1b0a-d1c8-4e63-88c2-db5b8e35fbc8.jpg?v=1780423848">
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>
