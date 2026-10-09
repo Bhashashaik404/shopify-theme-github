@@ -1,1 +1,281 @@
-{"sections":{"image_banner":{"type":"image-banner","disabled":true,"settings":{}},"collection_list_P64bKX":{"type":"collection-list","blocks":{"featured_collection_tCT683":{"type":"featured_collection","settings":{"collection":"protein-powders"}},"featured_collection_qydR9U":{"type":"featured_collection","settings":{"collection":"dumble-collection"}},"featured_collection_NHUtFF":{"type":"featured_collection","settings":{"collection":"exercise-products"}},"featured_collection_yBXYib":{"type":"featured_collection","settings":{"collection":"gym-outfits"}}},"block_order":["featured_collection_tCT683","featured_collection_qydR9U","featured_collection_NHUtFF","featured_collection_yBXYib"],"name":"t:sections.collection-list.presets.name","settings":{"title":"Collections","heading_size":"h2","image_ratio":"square","columns_desktop":3,"color_scheme":"","show_view_all":false,"columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"custom_liquid_hAdfXm":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<section class=\"category-section\">\n  <div class=\"category-grid\">\n\n    <div class=\"category-item\">\n      <a href=\"https:\/\/bhasha-eugnfs0i.myshopify.com\/products\/gym-dumbles\">\n        <div class=\"category-circle\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/gym-exercise-dumble-814_780ff046-2508-47d7-be94-2e6135bf8df8.jpg?v=1780591355\" alt=\"Dumbbells\">\n        <\/div>\n        <h3>DUMBBELLS<\/h3>\n      <\/a>\n    <\/div>\n\n    <div class=\"category-item\">\n      <a href=\"https:\/\/bhasha-eugnfs0i.myshopify.com\/products\/chest-bench\">\n        <div class=\"category-circle\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/Competitive-Price-Hot-Sale-Gym-Bench-Weight-Lifting-Gym-Equipment-Adjustable-Bench.avif?v=1779773186\" alt=\"Press Bench\">\n        <\/div>\n        <h3>PRESS BENCH<\/h3>\n      <\/a>\n    <\/div>\n\n    <div class=\"category-item\">\n      <a href=\"https:\/\/bhasha-eugnfs0i.myshopify.com\/products\/dumble-set-of-5-kgs\">\n        <div class=\"category-circle\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/gym-dumbbell-500x500.webp?v=1780392310\" alt=\"Steel Dumbbells\">\n        <\/div>\n        <h3>STEEL DUMBBELLS<\/h3>\n      <\/a>\n    <\/div>\n\n    <div class=\"category-item\">\n      <a href=\"#\">\n        <div class=\"category-circle\">\n          <img src=\"https:\/\/via.placeholder.com\/400\" alt=\"Accessories\">\n        <\/div>\n        <h3>ACCESSORIES<\/h3>\n      <\/a>\n    <\/div>\n\n    <div class=\"category-item\">\n      <a href=\"#\">\n        <div class=\"category-circle\">\n          <img src=\"https:\/\/via.placeholder.com\/400\" alt=\"Gifting\">\n        <\/div>\n        <h3>GIFTING<\/h3>\n      <\/a>\n    <\/div>\n\n  <\/div>\n<\/section>\n<style> *{\n    margin:0;\n    padding:0;\n    box-sizing:border-box;\n}\n\n.category-section{\n    width:100%;\n    padding:60px 30px;\n    background:#f5f3f1;\n}\n\n.category-grid{\n    max-width:1400px;\n    margin:auto;\n    display:grid;\n    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));\n    gap:35px;\n}\n\n.category-item{\n    text-align:center;\n}\n\n.category-item a{\n    text-decoration:none;\n    color:inherit;\n    display:block;\n}\n\n.category-circle{\n    width:100%;\n    aspect-ratio:1\/1;\n    max-width:260px;\n    margin:auto;\n    border-radius:50%;\n    overflow:hidden;\n    position:relative;\n    background:linear-gradient(\n        to bottom,\n        #d98a3d 0%,\n        #d98a3d 52%,\n        #efefef 52%,\n        #efefef 100%\n    );\n    transition:.35s ease;\n}\n\n.category-circle img{\n    position:absolute;\n    left:50%;\n    top:50%;\n    transform:translate(-50%,-50%);\n    width:85%;\n    height:85%;\n    object-fit:contain;\n    transition:.35s ease;\n}\n\n.category-item:hover .category-circle{\n    transform:translateY(-8px);\n    box-shadow:0 15px 30px rgba(0,0,0,.12);\n}\n\n.category-item:hover img{\n    transform:translate(-50%,-52%) scale(1.05);\n}\n\n.category-item h3{\n    margin-top:20px;\n    font-size:18px;\n    font-weight:700;\n    letter-spacing:1px;\n    color:#111;\n}\n\n\/* Large Desktop *\/\n\n@media (min-width:1400px){\n\n.category-grid{\ngrid-template-columns:repeat(5,1fr);\n}\n\n.category-circle{\nmax-width:250px;\n}\n\n}\n\n\/* Desktop *\/\n\n@media (max-width:1200px){\n\n.category-grid{\ngrid-template-columns:repeat(4,1fr);\n}\n\n.category-circle{\nmax-width:220px;\n}\n\n}\n\n\/* Tablet *\/\n\n@media (max-width:992px){\n\n.category-grid{\ngrid-template-columns:repeat(3,1fr);\ngap:25px;\n}\n\n.category-circle{\nmax-width:200px;\n}\n\n.category-item h3{\nfont-size:16px;\n}\n\n}\n\n\/* Mobile *\/\n\n@media (max-width:768px){\n\n.category-section{\npadding:40px 18px;\n}\n\n.category-grid{\ngrid-template-columns:repeat(2,1fr);\ngap:20px;\n}\n\n.category-circle{\nmax-width:160px;\n}\n\n.category-item h3{\nfont-size:14px;\nmargin-top:12px;\n}\n\n}\n\n\/* Small Mobile *\/\n\n@media (max-width:480px){\n\n.category-grid{\ngrid-template-columns:repeat(2,1fr);\ngap:15px;\n}\n\n.category-circle{\nmax-width:135px;\n}\n\n.category-item h3{\nfont-size:12px;\nletter-spacing:.5px;\n}\n\n}\n<\/style>","color_scheme":"","padding_top":40,"padding_bottom":52}},"featured_product_PNqfRn":{"type":"featured-product","disabled":true,"name":"t:sections.featured-product.presets.name","settings":{}},"image_with_text_3nDKeC":{"type":"image-with-text","disabled":true,"name":"t:sections.image-with-text.presets.name","settings":{}},"featured_collection_4Qr3qb":{"type":"featured-collection","disabled":true,"name":"t:sections.featured-collection.presets.name","settings":{}},"image_banner_8fBw4y":{"type":"image-banner","disabled":true,"name":"t:sections.image-banner.presets.name","settings":{}},"slideshow_jhcETU":{"type":"slideshow","name":"t:sections.slideshow.presets.name","settings":{"layout":"full_bleed","slide_height":"medium","slider_visual":"counter","auto_rotate":false,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":"Slideshow about our brand"}},"collage_3gfh6m":{"type":"collage","disabled":true,"name":"t:sections.collage.presets.name","settings":{}},"1780682277e95830d0":{"type":"_blocks","blocks":{"ai_gen_block_e0dac23_t384hN":{"type":"ai_gen_block_e0dac23","settings":{"heading":"Discover Our Collection","subheading":"Exclusive styles you won't find anywhere else","button_text":"Shop Now","button_link":"shopify:\/\/collections\/all-type-collection","background_color":"#5b3636","background_gradient":"","text_alignment":"center","content_max_width":750,"padding_top":20,"padding_bottom":20,"padding_horizontal":10,"heading_color":"#ffffff","heading_size":72,"heading_weight":"900","text_transform":"uppercase","letter_spacing":2,"heading_spacing":20,"subheading_color":"#ffffff","subheading_size":20,"button_spacing":40,"button_bg_color":"#ece8e8","button_text_color":"#121212","button_border_color":"#ffffff","button_hover_bg_color":"#334fb4","button_hover_text_color":"#ffffff","button_hover_border_color":"#334fb4","button_font_size":18,"button_font_weight":"700","button_text_transform":"uppercase","button_padding_vertical":20,"button_padding_horizontal":50,"button_border_radius":4,"button_border_width":2,"button_shadow_x":0,"button_shadow_y":8,"button_shadow_blur":16,"button_shadow_color":"#0000004d"},"blocks":{}}},"block_order":["ai_gen_block_e0dac23_t384hN"],"settings":{}},"multicolumn_d7m7Nd":{"type":"multicolumn","blocks":{"column_PwiYPY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Untitleddesign-2021-07-26T001023.256.webp","title":"Column","text":"<p>Discover our premium selection of gym machines designed to transform your fitness routine. From treadmills and stationary bikes to weight benches and cable machines, each piece is engineered for durability and performance. Whether you're building a home gym or upgrading your workout space, we offer equipment that suits every fitness level and budget. Browse our collection to find the perfect machines to help you reach your goals.<\/p>","link_label":"","link":""}},"column_AQ36hC":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/mxw_1024_f_auto.avif","title":"Column","text":"<p>Fitness is the state of being physically strong, healthy, and capable of performing daily activities with ease and endurance. It encompasses cardiovascular health, muscular strength, flexibility, and overall wellness. A fit body supports better energy levels, improved mental clarity, and long-term health benefits.<\/p>","link_label":"","link":""}},"column_UegTif":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/493ss_Thinkstock_rf_grilled_chicken_breast.webp","title":"Column","text":"<p>Fuel your body with nutrient-dense ingredients designed to support your fitness goals. Whether you're building strength, boosting endurance, or maintaining peak performance, our health and fitness food selection delivers the protein, vitamins, and minerals your body needs. Each product is chosen for quality and effectiveness, helping you stay energized throughout your day and recover stronger after every workout.<\/p>","link_label":"","link":""}}},"block_order":["column_PwiYPY","column_AQ36hC","column_UegTif"],"name":"t:sections.multicolumn.presets.name","settings":{"title":"Multicolumn","heading_size":"h1","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":3,"column_alignment":"left","background_style":"primary","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"custom_liquid_hbF3km":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<section class=\"why-choose\">\n  <div class=\"page-width\">\n    <h2 class=\"why-title\">Why Choose My website<\/h2>\n\n    <div class=\"timeline\"><\/div>\n\n    <div class=\"why-grid\">\n\n      <div class=\"why-item\">\n        <div class=\"dot\"><\/div>\n        <div class=\"icon-circle\">\n          <img src=\"https:\/\/cdn-icons-png.flaticon.com\/128\/3500\/3500833.png\" alt=\"\">\n        <\/div>\n        <h3>7 Days<br>Home Trial<\/h3>\n      <\/div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"><\/div>\n        <div class=\"icon-circle\">\n          <img src=\"https:\/\/cdn-icons-png.flaticon.com\/128\/1048\/1048314.png\" alt=\"\">\n        <\/div>\n        <h3>Free<br>Shipping<\/h3>\n      <\/div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"><\/div>\n        <div class=\"icon-circle\">\n          <img src=\"https:\/\/cdn-icons-png.flaticon.com\/128\/3082\/3082037.png\" alt=\"\">\n        <\/div>\n        <h3>Doorstep<br>Delivery<\/h3>\n      <\/div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"><\/div>\n        <div class=\"icon-circle\">\n          <img src=\"https:\/\/cdn-icons-png.flaticon.com\/128\/942\/942799.png\" alt=\"\">\n        <\/div>\n        <h3>FREE Onsite<br>Installation<\/h3>\n      <\/div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"><\/div>\n        <div class=\"icon-circle\">\n          <img src=\"https:\/\/cdn-icons-png.flaticon.com\/128\/1828\/1828884.png\" alt=\"\">\n        <\/div>\n        <h3>5 Year Motor<br>Warranty<\/h3>\n      <\/div>\n\n    <\/div>\n  <\/div>\n<\/section>\n<style> .why-choose {\n  background: #f5f5f5;\n  padding: 40px 20px 50px;\n  position: relative;\n}\n\n.why-title {\n  text-align: center;\n  font-size: 42px;\n  font-weight: 700;\n  margin-bottom: 50px;\n  color: #111;\n}\n\n.page-width {\n  max-width: 1200px;\n  margin: auto;\n  position: relative;\n}\n\n.timeline {\n  position: absolute;\n  top: 105px;\n  left: 5%;\n  width: 90%;\n  border-top: 2px dashed #d8d8d8;\n}\n\n.why-grid {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n  gap: 20px;\n  position: relative;\n}\n\n.why-item {\n  flex: 1;\n  text-align: center;\n  position: relative;\n}\n\n.dot {\n  width: 18px;\n  height: 18px;\n  background: #e61b2a;\n  border-radius: 50%;\n  border: 3px solid #fff;\n  margin: 0 auto;\n  position: relative;\n  z-index: 2;\n}\n\n.why-item::before {\n  content: \"\";\n  width: 1px;\n  height: 70px;\n  background: #d8d8d8;\n  position: absolute;\n  top: 18px;\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.icon-circle {\n  width: 80px;\n  height: 80px;\n  background: #e61b2a;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 70px auto 15px;\n}\n\n.icon-circle img {\n  width: 38px;\n  height: 38px;\n  filter: brightness(0) invert(1);\n}\n\n.why-item h3 {\n  font-size: 18px;\n  line-height: 1.5;\n  font-weight: 600;\n  color: #222;\n  margin: 0;\n}\n\n\/* Mobile Responsive *\/\n\n@media screen and (max-width: 768px) {\n\n  .why-title {\n    font-size: 28px;\n    margin-bottom: 30px;\n  }\n\n  .timeline {\n    display: none;\n  }\n\n  .why-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 25px;\n  }\n\n  .why-item::before {\n    display: none;\n  }\n\n  .dot {\n    display: none;\n  }\n\n  .icon-circle {\n    width: 65px;\n    height: 65px;\n    margin-top: 0;\n  }\n\n  .icon-circle img {\n    width: 30px;\n    height: 30px;\n  }\n\n  .why-item h3 {\n    font-size: 15px;\n  }\n}\n\n@media screen and (max-width: 480px) {\n\n  .why-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .why-title {\n    font-size: 24px;\n  }\n}\n<\/style>","color_scheme":"","padding_top":40,"padding_bottom":52}},"contact_form_qtFnzh":{"type":"contact-form","name":"t:sections.contact-form.presets.name","settings":{"heading":"Contact form","heading_size":"h2","color_scheme":"scheme-1","padding_top":32,"padding_bottom":20}},"1780390980293bec41":{"type":"_blocks","blocks":{"ai_gen_block_c91d7ce_MdFDNe":{"type":"ai_gen_block_c91d7ce","settings":{"video_url":"https:\/\/youtu.be\/unCrCjfBkSM?si=HiJ0DIyE524mzLKv","aspect_ratio":"56.25","border_radius":6,"desktop_width_percent":70,"heading":"","description":"","text_alignment":"left","heading_size":32,"heading_color":"#121212","heading_spacing":12,"description_size":16,"description_color":"#121212","description_spacing":16},"blocks":{}}},"block_order":["ai_gen_block_c91d7ce_MdFDNe"],"settings":{}},"custom_liquid_mT4m4w":{"type":"custom-liquid","name":"t:sections.custom-liquid.presets.name","settings":{"custom_liquid":"<section class=\"reviews-section\">\n  <div class=\"reviews-wrapper\">\n\n    <button class=\"review-btn prev\">&#10094;<\/button>\n\n    <div class=\"reviews-slider\">\n\n      <!-- Card 1 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">PV<\/div>\n          <div>\n            <h4> Manikanta<\/h4>\n            <span>Reviewer<\/span>\n          <\/div>\n        <\/div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>3\/5<\/span>\n        <\/div>\n\n        <div class=\"review-content\">\n          The machine feels sturdy and well-built, and the display helps me track time, calories, and distance.\n          <p>3 months ago<\/p>\n        <\/div>\n\n        <div class=\"product-info\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/CHG-200CHomeGym_1_58ba1b0a-d1c8-4e63-88c2-db5b8e35fbc8.jpg?v=1780423848\" alt=\"\">\n          <span>Bhasha Gym Spin Bike<\/span>\n        <\/div>\n      <\/div>\n\n      <!-- Card 2 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">VB<\/div>\n          <div>\n            <h4>Satya Sai<\/h4>\n            <span>Reviewer<\/span>\n          <\/div>\n        <\/div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>4\/5<\/span>\n        <\/div>\n\n        <div class=\"review-content\">\n          Absolutely loving my cross trainer! It's been a game-changer for my daily fitness routine.\n          <p>3 months ago<\/p>\n        <\/div>\n\n        <div class=\"product-info\">\n\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/9765022af7fcb5830688d48fa4abfb87.jpg?v=1780593168 \" alt=\"\">\n          <span>Bhasha Enduro Trainer<\/span>\n        <\/div>\n      <\/div>\n\n      <!-- Card 3 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">R<\/div>\n          <div>\n            <h4>Suresh <\/h4>\n            <span>Reviewer<\/span>\n          <\/div>\n        <\/div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>3\/5<\/span>\n        <\/div>\n\n        <div class=\"review-content\">\n          Highly recommended for anyone looking for an efficient and productive treadmill.\n          <p>3 months ago<\/p>\n        <\/div>\n\n        <div class=\"product-info\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/treadmill-5-0hp-a-c-motorized-auto-incline-with-mp3-semi-comm--500x500.webp?v=1779978533\" alt=\"\">\n          <span>Bhasha Max Run Treadmill<\/span>\n        <\/div>\n      <\/div>\n\n      <!-- Card 4 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">A<\/div>\n          <div>\n            <h4>Sai<\/h4>\n            <span>Reviewer<\/span>\n          <\/div>\n        <\/div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>5\/5<\/span>\n        <\/div>\n\n        <div class=\"review-content\">\n          The build quality is solid and feels very durable, even with regular use.\n          <p>3 months ago<\/p>\n        <\/div>\n\n        <div class=\"product-info\">\n          <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0986\/7893\/1776\/files\/Gym-Fitness-Plated-Loaded-Equipment-Arm-Press-Back-Machine.avif?v=1779978619\" alt=\"\">\n          <span>Bhasha Elite Multistation Gym<\/span>\n        <\/div>\n      <\/div>\n\n    <\/div>\n\n    <button class=\"review-btn next\">&#10095;<\/button>\n\n  <\/div>\n<\/section>\n<style>.reviews-section{\n  padding:40px 20px;\n  background:#f7f7f7;\n}\n\n.reviews-wrapper{\n  position:relative;\n  max-width:1400px;\n  margin:auto;\n}\n\n.reviews-slider{\n  display:flex;\n  gap:20px;\n  overflow-x:auto;\n  scroll-behavior:smooth;\n  scrollbar-width:none;\n}\n\n.reviews-slider::-webkit-scrollbar{\n  display:none;\n}\n\n.review-card{\n  min-width:320px;\n  max-width:320px;\n  background:#fff;\n  border:1px solid #e5e5e5;\n  padding:20px;\n  border-radius:10px;\n  flex-shrink:0;\n}\n\n.review-header{\n  display:flex;\n  align-items:center;\n  gap:12px;\n  border-bottom:1px solid #d9d9d9;\n  padding-bottom:15px;\n}\n\n.avatar{\n  width:50px;\n  height:50px;\n  border-radius:50%;\n  background:#d8d8d8;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  font-weight:700;\n  font-size:20px;\n}\n\n.review-header h4{\n  margin:0;\n  font-size:20px;\n  color:#253746;\n}\n\n.review-header span{\n  color:#666;\n  font-size:14px;\n}\n\n.stars{\n  margin:15px 0;\n  color:#f6b100;\n  font-size:24px;\n}\n\n.stars span{\n  color:#666;\n  font-size:18px;\n  margin-left:8px;\n}\n\n.review-content{\n  background:#fafafa;\n  border-radius:8px;\n  padding:18px;\n  min-height:140px;\n  color:#444;\n  line-height:1.5;\n}\n\n.review-content p{\n  margin-top:15px;\n  color:#999;\n}\n\n.product-info{\n  margin-top:20px;\n  display:flex;\n  align-items:center;\n  gap:12px;\n}\n\n.product-info img{\n  width:55px;\n  height:auto;\n}\n\n.product-info span{\n  color:#d61f5b;\n  font-weight:600;\n}\n\n.review-btn{\n  position:absolute;\n  top:50%;\n  transform:translateY(-50%);\n  width:40px;\n  height:40px;\n  border:none;\n  background:#fff;\n  border-radius:50%;\n  cursor:pointer;\n  box-shadow:0 2px 10px rgba(0,0,0,.15);\n  z-index:5;\n  font-size:20px;\n}\n\n.prev{\n  left:-15px;\n}\n\n.next{\n  right:-15px;\n}\n\n@media(max-width:768px){\n\n  .review-card{\n    min-width:270px;\n    max-width:270px;\n    padding:15px;\n  }\n\n  .avatar{\n    width:42px;\n    height:42px;\n    font-size:16px;\n  }\n\n  .review-header h4{\n    font-size:17px;\n  }\n\n  .stars{\n    font-size:20px;\n  }\n\n  .review-content{\n    min-height:auto;\n  }\n\n  .review-btn{\n    display:none;\n  }\n}\n<\/style>","color_scheme":"","padding_top":20,"padding_bottom":24}}},"order":["image_banner","collection_list_P64bKX","custom_liquid_hAdfXm","featured_product_PNqfRn","image_with_text_3nDKeC","featured_collection_4Qr3qb","image_banner_8fBw4y","slideshow_jhcETU","collage_3gfh6m","1780682277e95830d0","multicolumn_d7m7Nd","custom_liquid_hbF3km","contact_form_qtFnzh","1780390980293bec41","custom_liquid_mT4m4w"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "collection_list_P64bKX": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_tCT683": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "protein-powders"
+          }
+        },
+        "featured_collection_qydR9U": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dumble-collection"
+          }
+        },
+        "featured_collection_NHUtFF": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "exercise-products"
+          }
+        },
+        "featured_collection_yBXYib": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gym-outfits"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_tCT683",
+        "featured_collection_qydR9U",
+        "featured_collection_NHUtFF",
+        "featured_collection_yBXYib"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h2",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_PNqfRn": {
+      "type": "featured-product",
+      "disabled": true,
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {}
+    },
+    "image_with_text_3nDKeC": {
+      "type": "image-with-text",
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {}
+    },
+    "featured_collection_4Qr3qb": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {}
+    },
+    "slideshow_jhcETU": {
+      "type": "slideshow",
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "collage_3gfh6m": {
+      "type": "collage",
+      "disabled": true,
+      "name": "t:sections.collage.presets.name",
+      "settings": {}
+    },
+    "1780682277e95830d0": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e0dac23_t384hN": {
+          "type": "ai_gen_block_e0dac23",
+          "settings": {
+            "heading": "Discover Our Collection",
+            "subheading": "Exclusive styles you won't find anywhere else",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/all-type-collection",
+            "background_color": "#5b3636",
+            "background_gradient": "",
+            "text_alignment": "center",
+            "content_max_width": 750,
+            "padding_top": 20,
+            "padding_bottom": 20,
+            "padding_horizontal": 10,
+            "heading_color": "#ffffff",
+            "heading_size": 72,
+            "heading_weight": "900",
+            "text_transform": "uppercase",
+            "letter_spacing": 2,
+            "heading_spacing": 20,
+            "subheading_color": "#ffffff",
+            "subheading_size": 20,
+            "button_spacing": 40,
+            "button_bg_color": "#ece8e8",
+            "button_text_color": "#121212",
+            "button_border_color": "#ffffff",
+            "button_hover_bg_color": "#334fb4",
+            "button_hover_text_color": "#ffffff",
+            "button_hover_border_color": "#334fb4",
+            "button_font_size": 18,
+            "button_font_weight": "700",
+            "button_text_transform": "uppercase",
+            "button_padding_vertical": 20,
+            "button_padding_horizontal": 50,
+            "button_border_radius": 4,
+            "button_border_width": 2,
+            "button_shadow_x": 0,
+            "button_shadow_y": 8,
+            "button_shadow_blur": 16,
+            "button_shadow_color": "#0000004d"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e0dac23_t384hN"
+      ],
+      "settings": {}
+    },
+    "multicolumn_d7m7Nd": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_PwiYPY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitleddesign-2021-07-26T001023.256.webp",
+            "title": "Column",
+            "text": "<p>Discover our premium selection of gym machines designed to transform your fitness routine. From treadmills and stationary bikes to weight benches and cable machines, each piece is engineered for durability and performance. Whether you're building a home gym or upgrading your workout space, we offer equipment that suits every fitness level and budget. Browse our collection to find the perfect machines to help you reach your goals.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AQ36hC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/mxw_1024_f_auto.avif",
+            "title": "Column",
+            "text": "<p>Fitness is the state of being physically strong, healthy, and capable of performing daily activities with ease and endurance. It encompasses cardiovascular health, muscular strength, flexibility, and overall wellness. A fit body supports better energy levels, improved mental clarity, and long-term health benefits.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UegTif": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/493ss_Thinkstock_rf_grilled_chicken_breast.webp",
+            "title": "Column",
+            "text": "<p>Fuel your body with nutrient-dense ingredients designed to support your fitness goals. Whether you're building strength, boosting endurance, or maintaining peak performance, our health and fitness food selection delivers the protein, vitamins, and minerals your body needs. Each product is chosen for quality and effectiveness, helping you stay energized throughout your day and recover stronger after every workout.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_PwiYPY",
+        "column_AQ36hC",
+        "column_UegTif"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_hbF3km": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"why-choose\">\n  <div class=\"page-width\">\n    <h2 class=\"why-title\">Why Choose My website</h2>\n\n    <div class=\"timeline\"></div>\n\n    <div class=\"why-grid\">\n\n      <div class=\"why-item\">\n        <div class=\"dot\"></div>\n        <div class=\"icon-circle\">\n          <img src=\"https://cdn-icons-png.flaticon.com/128/3500/3500833.png\" alt=\"\">\n        </div>\n        <h3>7 Days<br>Home Trial</h3>\n      </div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"></div>\n        <div class=\"icon-circle\">\n          <img src=\"https://cdn-icons-png.flaticon.com/128/1048/1048314.png\" alt=\"\">\n        </div>\n        <h3>Free<br>Shipping</h3>\n      </div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"></div>\n        <div class=\"icon-circle\">\n          <img src=\"https://cdn-icons-png.flaticon.com/128/3082/3082037.png\" alt=\"\">\n        </div>\n        <h3>Doorstep<br>Delivery</h3>\n      </div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"></div>\n        <div class=\"icon-circle\">\n          <img src=\"https://cdn-icons-png.flaticon.com/128/942/942799.png\" alt=\"\">\n        </div>\n        <h3>FREE Onsite<br>Installation</h3>\n      </div>\n\n      <div class=\"why-item\">\n        <div class=\"dot\"></div>\n        <div class=\"icon-circle\">\n          <img src=\"https://cdn-icons-png.flaticon.com/128/1828/1828884.png\" alt=\"\">\n        </div>\n        <h3>5 Year Motor<br>Warranty</h3>\n      </div>\n\n    </div>\n  </div>\n</section>\n<style> .why-choose {\n  background: #f5f5f5;\n  padding: 40px 20px 50px;\n  position: relative;\n}\n\n.why-title {\n  text-align: center;\n  font-size: 42px;\n  font-weight: 700;\n  margin-bottom: 50px;\n  color: #111;\n}\n\n.page-width {\n  max-width: 1200px;\n  margin: auto;\n  position: relative;\n}\n\n.timeline {\n  position: absolute;\n  top: 105px;\n  left: 5%;\n  width: 90%;\n  border-top: 2px dashed #d8d8d8;\n}\n\n.why-grid {\n  display: flex;\n  justify-content: space-between;\n  align-items: flex-start;\n  gap: 20px;\n  position: relative;\n}\n\n.why-item {\n  flex: 1;\n  text-align: center;\n  position: relative;\n}\n\n.dot {\n  width: 18px;\n  height: 18px;\n  background: #e61b2a;\n  border-radius: 50%;\n  border: 3px solid #fff;\n  margin: 0 auto;\n  position: relative;\n  z-index: 2;\n}\n\n.why-item::before {\n  content: \"\";\n  width: 1px;\n  height: 70px;\n  background: #d8d8d8;\n  position: absolute;\n  top: 18px;\n  left: 50%;\n  transform: translateX(-50%);\n}\n\n.icon-circle {\n  width: 80px;\n  height: 80px;\n  background: #e61b2a;\n  border-radius: 50%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin: 70px auto 15px;\n}\n\n.icon-circle img {\n  width: 38px;\n  height: 38px;\n  filter: brightness(0) invert(1);\n}\n\n.why-item h3 {\n  font-size: 18px;\n  line-height: 1.5;\n  font-weight: 600;\n  color: #222;\n  margin: 0;\n}\n\n/* Mobile Responsive */\n\n@media screen and (max-width: 768px) {\n\n  .why-title {\n    font-size: 28px;\n    margin-bottom: 30px;\n  }\n\n  .timeline {\n    display: none;\n  }\n\n  .why-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 25px;\n  }\n\n  .why-item::before {\n    display: none;\n  }\n\n  .dot {\n    display: none;\n  }\n\n  .icon-circle {\n    width: 65px;\n    height: 65px;\n    margin-top: 0;\n  }\n\n  .icon-circle img {\n    width: 30px;\n    height: 30px;\n  }\n\n  .why-item h3 {\n    font-size: 15px;\n  }\n}\n\n@media screen and (max-width: 480px) {\n\n  .why-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .why-title {\n    font-size: 24px;\n  }\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_qtFnzh": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h2",
+        "color_scheme": "scheme-1",
+        "padding_top": 32,
+        "padding_bottom": 20
+      }
+    },
+    "1780390980293bec41": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c91d7ce_MdFDNe": {
+          "type": "ai_gen_block_c91d7ce",
+          "settings": {
+            "video_url": "https://youtu.be/unCrCjfBkSM?si=HiJ0DIyE524mzLKv",
+            "aspect_ratio": "56.25",
+            "border_radius": 6,
+            "desktop_width_percent": 70,
+            "heading": "",
+            "description": "",
+            "text_alignment": "left",
+            "heading_size": 32,
+            "heading_color": "#121212",
+            "heading_spacing": 12,
+            "description_size": 16,
+            "description_color": "#121212",
+            "description_spacing": 16
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c91d7ce_MdFDNe"
+      ],
+      "settings": {}
+    },
+    "custom_liquid_mT4m4w": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<section class=\"reviews-section\">\n  <div class=\"reviews-wrapper\">\n\n    <button class=\"review-btn prev\">&#10094;</button>\n\n    <div class=\"reviews-slider\">\n\n      <!-- Card 1 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">PV</div>\n          <div>\n            <h4> Manikanta</h4>\n            <span>Reviewer</span>\n          </div>\n        </div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>3/5</span>\n        </div>\n\n        <div class=\"review-content\">\n          The machine feels sturdy and well-built, and the display helps me track time, calories, and distance.\n          <p>3 months ago</p>\n        </div>\n\n        <div class=\"product-info\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0986/7893/1776/files/CHG-200CHomeGym_1_58ba1b0a-d1c8-4e63-88c2-db5b8e35fbc8.jpg?v=1780423848\" alt=\"\">\n          <span>Bhasha Gym Spin Bike</span>\n        </div>\n      </div>\n\n      <!-- Card 2 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">VB</div>\n          <div>\n            <h4>Satya Sai</h4>\n            <span>Reviewer</span>\n          </div>\n        </div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>4/5</span>\n        </div>\n\n        <div class=\"review-content\">\n          Absolutely loving my cross trainer! It's been a game-changer for my daily fitness routine.\n          <p>3 months ago</p>\n        </div>\n\n        <div class=\"product-info\">\n\n          <img src=\"https://cdn.shopify.com/s/files/1/0986/7893/1776/files/9765022af7fcb5830688d48fa4abfb87.jpg?v=1780593168 \" alt=\"\">\n          <span>Bhasha Enduro Trainer</span>\n        </div>\n      </div>\n\n      <!-- Card 3 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">R</div>\n          <div>\n            <h4>Suresh </h4>\n            <span>Reviewer</span>\n          </div>\n        </div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>3/5</span>\n        </div>\n\n        <div class=\"review-content\">\n          Highly recommended for anyone looking for an efficient and productive treadmill.\n          <p>3 months ago</p>\n        </div>\n\n        <div class=\"product-info\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0986/7893/1776/files/treadmill-5-0hp-a-c-motorized-auto-incline-with-mp3-semi-comm--500x500.webp?v=1779978533\" alt=\"\">\n          <span>Bhasha Max Run Treadmill</span>\n        </div>\n      </div>\n\n      <!-- Card 4 -->\n      <div class=\"review-card\">\n        <div class=\"review-header\">\n          <div class=\"avatar\">A</div>\n          <div>\n            <h4>Sai</h4>\n            <span>Reviewer</span>\n          </div>\n        </div>\n\n        <div class=\"stars\">\n          ★★★★★ <span>5/5</span>\n        </div>\n\n        <div class=\"review-content\">\n          The build quality is solid and feels very durable, even with regular use.\n          <p>3 months ago</p>\n        </div>\n\n        <div class=\"product-info\">\n          <img src=\"https://cdn.shopify.com/s/files/1/0986/7893/1776/files/Gym-Fitness-Plated-Loaded-Equipment-Arm-Press-Back-Machine.avif?v=1779978619\" alt=\"\">\n          <span>Bhasha Elite Multistation Gym</span>\n        </div>\n      </div>\n\n    </div>\n\n    <button class=\"review-btn next\">&#10095;</button>\n\n  </div>\n</section>\n<style>.reviews-section{\n  padding:40px 20px;\n  background:#f7f7f7;\n}\n\n.reviews-wrapper{\n  position:relative;\n  max-width:1400px;\n  margin:auto;\n}\n\n.reviews-slider{\n  display:flex;\n  gap:20px;\n  overflow-x:auto;\n  scroll-behavior:smooth;\n  scrollbar-width:none;\n}\n\n.reviews-slider::-webkit-scrollbar{\n  display:none;\n}\n\n.review-card{\n  min-width:320px;\n  max-width:320px;\n  background:#fff;\n  border:1px solid #e5e5e5;\n  padding:20px;\n  border-radius:10px;\n  flex-shrink:0;\n}\n\n.review-header{\n  display:flex;\n  align-items:center;\n  gap:12px;\n  border-bottom:1px solid #d9d9d9;\n  padding-bottom:15px;\n}\n\n.avatar{\n  width:50px;\n  height:50px;\n  border-radius:50%;\n  background:#d8d8d8;\n  display:flex;\n  align-items:center;\n  justify-content:center;\n  font-weight:700;\n  font-size:20px;\n}\n\n.review-header h4{\n  margin:0;\n  font-size:20px;\n  color:#253746;\n}\n\n.review-header span{\n  color:#666;\n  font-size:14px;\n}\n\n.stars{\n  margin:15px 0;\n  color:#f6b100;\n  font-size:24px;\n}\n\n.stars span{\n  color:#666;\n  font-size:18px;\n  margin-left:8px;\n}\n\n.review-content{\n  background:#fafafa;\n  border-radius:8px;\n  padding:18px;\n  min-height:140px;\n  color:#444;\n  line-height:1.5;\n}\n\n.review-content p{\n  margin-top:15px;\n  color:#999;\n}\n\n.product-info{\n  margin-top:20px;\n  display:flex;\n  align-items:center;\n  gap:12px;\n}\n\n.product-info img{\n  width:55px;\n  height:auto;\n}\n\n.product-info span{\n  color:#d61f5b;\n  font-weight:600;\n}\n\n.review-btn{\n  position:absolute;\n  top:50%;\n  transform:translateY(-50%);\n  width:40px;\n  height:40px;\n  border:none;\n  background:#fff;\n  border-radius:50%;\n  cursor:pointer;\n  box-shadow:0 2px 10px rgba(0,0,0,.15);\n  z-index:5;\n  font-size:20px;\n}\n\n.prev{\n  left:-15px;\n}\n\n.next{\n  right:-15px;\n}\n\n@media(max-width:768px){\n\n  .review-card{\n    min-width:270px;\n    max-width:270px;\n    padding:15px;\n  }\n\n  .avatar{\n    width:42px;\n    height:42px;\n    font-size:16px;\n  }\n\n  .review-header h4{\n    font-size:17px;\n  }\n\n  .stars{\n    font-size:20px;\n  }\n\n  .review-content{\n    min-height:auto;\n  }\n\n  .review-btn{\n    display:none;\n  }\n}\n</style>",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
+    }
+  },
+  "order": [
+    "collection_list_P64bKX",
+    "featured_product_PNqfRn",
+    "image_with_text_3nDKeC",
+    "featured_collection_4Qr3qb",
+    "slideshow_jhcETU",
+    "collage_3gfh6m",
+    "1780682277e95830d0",
+    "multicolumn_d7m7Nd",
+    "custom_liquid_hbF3km",
+    "contact_form_qtFnzh",
+    "1780390980293bec41",
+    "custom_liquid_mT4m4w"
+  ]
+}
